@@ -12,7 +12,7 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '#nodes', label: 'Nodes' },
+  { href: '#logo-cloud', label: 'Nodes' },
   { href: 'https://docs.nodenetworks.org/', label: 'FAQ' },
 ]
 

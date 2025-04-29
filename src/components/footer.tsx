@@ -24,7 +24,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
 function Sitemap() {
   return (
     <div className="flex gap-8">
-      <SitemapLink href="#nodes">Nodes</SitemapLink>
+      <SitemapLink href="#logo-cloud">Nodes</SitemapLink>
       <SitemapLink href="https://docs.nodenetworks.org/">FAQ</SitemapLink>
     </div>
   )

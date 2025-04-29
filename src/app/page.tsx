@@ -37,7 +37,7 @@ function Hero() {
               href="#logo-cloud"
               className="inline-flex items-center gap-2 rounded-full bg-gray-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-950/90"
             >
-              View Our Partners
+              View Our Projects
               <svg
                 className="size-4"
                 fill="none"
