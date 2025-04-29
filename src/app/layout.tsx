@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Node Networks - Cardano Staking Services',
+  title: 'Node Networks - Staking Services',
   description:
     'Professional Cardano staking services and consultancy. Maximize your staking rewards with our global team of experts. Secure, reliable, and community-driven staking pools.',
   keywords: [
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
         url: '/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Node Networks - Cardano Staking Services',
+        alt: 'Node Networks - Staking Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Node Networks - Cardano Staking Services',
+    title: 'Node Networks - Staking Services',
     description:
       'Professional Cardano staking services and consultancy. Maximize your staking rewards with our global team of experts.',
     images: ['/logo.png'],
