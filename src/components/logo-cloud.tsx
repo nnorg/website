@@ -7,13 +7,13 @@ export function LogoCloud({
     <div
       className={clsx(
         className,
-        'flex justify-between pt-10 max-sm:mx-auto max-sm:max-w-md max-sm:flex-wrap max-sm:justify-evenly max-sm:gap-x-4 max-sm:gap-y-4',
+        'flex flex-col items-center gap-12 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-12 sm:px-12 lg:flex-nowrap lg:justify-between lg:gap-4 lg:px-0',
       )}
     >
       <img
         alt="Cardano"
         src="/logo-cloud/cardano-transparent.png"
-        className="h-18 max-sm:mx-auto sm:h-16 lg:h-24"
+        className="h-16 w-auto max-w-[180px] sm:h-20 lg:h-20"
       />
 
       <svg
@@ -22,25 +22,21 @@ export function LogoCloud({
         fill="none"
         viewBox="0 0 131 21"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-18 scale-150 max-sm:mx-auto sm:h-16 lg:h-24"
+        className="mx-4 h-16 w-auto max-w-[180px] scale-125 sm:h-20 lg:h-20"
       >
         <path
-          className="max-sm:hidden"
           d="M69.0928 8.66406H130.176V12.4496H69.4597L69.0928 8.66406Z"
           fill="url(#paint0_linear_1812_19989)"
         />
         <path
-          className="max-sm:hidden"
           d="M63.6802 4.88086H130.174V8.66638H69.0702L63.6802 4.88086Z"
           fill="url(#paint1_linear_1812_19989)"
         />
         <path
-          className="max-sm:hidden"
           d="M69.4556 16.2363H130.172V20.0218H69.4556V16.2363Z"
           fill="url(#paint2_linear_1812_19989)"
         />
         <path
-          className="max-sm:hidden"
           d="M69.4556 12.4531H130.172V16.2386H69.4556V12.4531Z"
           fill="url(#paint3_linear_1812_19989)"
         />
@@ -114,17 +110,17 @@ export function LogoCloud({
       <img
         alt="Bull"
         src="/logo-cloud/bull.webp"
-        className="h-22 lg:h-30 scale-150 max-sm:mx-auto sm:h-20"
+        className="h-20 w-auto max-w-[180px] scale-125 sm:h-24 lg:h-24"
       />
       <img
         alt="Myria"
         src="/logo-cloud/myria.png"
-        className="h-18 max-sm:mx-auto sm:h-16 lg:h-24"
+        className="h-16 w-auto object-contain sm:h-20 lg:h-20"
       />
       <img
         alt="XAI"
         src="/logo-cloud/xai.jpg"
-        className="h-18 scale-150 max-sm:mx-auto sm:h-16 lg:h-24"
+        className="h-16 w-auto max-w-[180px] scale-125 sm:h-20 lg:h-20"
       />
     </div>
   )

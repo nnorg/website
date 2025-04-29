@@ -14,50 +14,19 @@ function SitemapLinks({ children }: { children: React.ReactNode }) {
 
 function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
-    <li>
-      <Link
-        {...props}
-        className="font-medium text-gray-950 data-[hover]:text-gray-950/75"
-      />
-    </li>
+    <Link
+      {...props}
+      className="font-medium text-gray-950 data-[hover]:text-gray-950/75"
+    />
   )
 }
 
 function Sitemap() {
   return (
-    <>
-      <div>
-        <SitemapHeading>Product</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/contact">Contact</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Support</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
-        </SitemapLinks>
-      </div>
-    </>
+    <div className="flex gap-8">
+      <SitemapLink href="#nodes">Nodes</SitemapLink>
+      <SitemapLink href="https://docs.nodenetworks.org/">FAQ</SitemapLink>
+    </div>
   )
 }
 
@@ -77,6 +46,14 @@ function SocialIconEmail(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function SocialIconTelegram(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.98 1.26-5.61 3.71-.53.36-1.01.53-1.47.52-.49-.01-1.43-.28-2.13-.51-.86-.29-1.54-.44-1.48-.93.03-.25.38-.51 1.05-.78 4.12-1.79 6.87-2.97 8.26-3.54 3.93-1.63 4.75-1.91 5.26-1.91.12 0 .38.03.55.17.14.12.18.28.2.45-.02.14-.02.3-.04.42z" />
+    </svg>
+  )
+}
+
 function SocialLinks() {
   return (
     <>
@@ -87,6 +64,14 @@ function SocialLinks() {
         className="text-gray-950 data-[hover]:text-gray-950/75"
       >
         <SocialIconX className="size-4" />
+      </Link>
+      <Link
+        href="https://t.me/NodeNetworksADAPool"
+        target="_blank"
+        aria-label="Join our Telegram channel"
+        className="text-gray-950 data-[hover]:text-gray-950/75"
+      >
+        <SocialIconTelegram className="size-5" />
       </Link>
       <Link
         href="mailto:info@nodenetworks.org"
@@ -119,6 +104,11 @@ export function Footer() {
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Logo className="h-9" />
+                  </PlusGridItem>
+                </div>
+                <div className="col-span-2 flex items-center justify-end lg:col-span-4">
+                  <PlusGridItem>
+                    <Sitemap />
                   </PlusGridItem>
                 </div>
               </div>

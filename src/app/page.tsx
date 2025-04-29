@@ -32,6 +32,27 @@ function Hero() {
             consultancy group with a global team aimed at helping others
             maximize staking rewards through our global reach.
           </p>
+          <div className="mt-8">
+            <a
+              href="#logo-cloud"
+              className="inline-flex items-center gap-2 rounded-full bg-gray-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-950/90"
+            >
+              View Our Partners
+              <svg
+                className="size-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </Container>
     </div>
@@ -175,9 +196,7 @@ function StakingInfo() {
             <Heading as="h3" className="mt-2">
               Cardano
             </Heading>
-            <p className="mt-4 text-2xl font-semibold text-gray-900">
-              APY 2-5%
-            </p>
+
             <div className="mt-8 space-y-6">
               <div>
                 <p className="text-sm/6 font-medium text-gray-900">
@@ -191,7 +210,7 @@ function StakingInfo() {
                 <p className="text-sm/6 font-medium text-gray-900">
                   Delegation Address
                 </p>
-                <p className="mt-1 text-sm/6 text-gray-600">
+                <p className="mt-1 break-all text-sm/6 text-gray-600">
                   de950fe87de4b25c5a63b5ddf89578adf92e36cdf2035f1da11797d4
                 </p>
               </div>
@@ -223,7 +242,7 @@ function StakingInfo() {
           <div className="mx-auto max-w-2xl text-center">
             <Subheading>Private Staking Services</Subheading>
             <Heading as="h3" className="mt-2">
-              3ull, Myria, and XAI
+              Beam, 3ull, Myria, and XAI
             </Heading>
             <p className="mt-4 text-2xl font-semibold text-gray-900">
               Private Client Staking
@@ -234,14 +253,14 @@ function StakingInfo() {
                   Service Type
                 </p>
                 <p className="mt-1 text-lg text-gray-600">
-                  Private staking services for institutional clients
+                  Private staking services for clients
                 </p>
               </div>
               <div>
                 <p className="text-sm/6 font-medium text-gray-900">
                   Availability
                 </p>
-                <p className="mt-1 text-lg text-gray-600">By invitation only</p>
+                <p className="mt-1 text-lg text-gray-600">By request only</p>
               </div>
               <div>
                 <a
@@ -296,7 +315,7 @@ function Testimonials() {
             <p className="text-sm/6 font-medium text-gray-900">
               Former FSN Staker
             </p>
-            <p className="text-sm/6 text-gray-600">Staking since 2023</p>
+            <p className="text-sm/6 text-gray-600">Staking since 2019</p>
           </div>
         </div>
         <div className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
@@ -312,7 +331,7 @@ function Testimonials() {
             <p className="text-sm/6 font-medium text-gray-900">
               Former FSN Staker
             </p>
-            <p className="text-sm/6 text-gray-600">Staking since 2022</p>
+            <p className="text-sm/6 text-gray-600">Staking since 2021</p>
           </div>
         </div>
         <div className="rounded-3xl bg-white p-8 shadow-lg ring-1 ring-gray-200">
@@ -341,7 +360,9 @@ export default function Home() {
       <Hero />
       <main className="flex-grow">
         <Container className="py-16">
-          <LogoCloud />
+          <div id="logo-cloud">
+            <LogoCloud />
+          </div>
         </Container>
         <StakingInfo />
         <Testimonials />
