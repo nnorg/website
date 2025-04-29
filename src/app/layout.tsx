@@ -7,7 +7,13 @@ export const metadata: Metadata = {
     default: 'Node Networks - Staking Works for EVERYONE.',
   },
   icons: {
-    icon: '/logo.png',
+    icon: [
+      { url: '/public/logo.png', type: 'image/png' },
+      { url: '/public/logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/public/logo.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/public/logo.png', type: 'image/png' }],
+    shortcut: ['/public/logo.png'],
   },
 }
 
