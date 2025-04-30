@@ -92,7 +92,8 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Node Networks. All rights reserved.
+      &copy; {new Date().getFullYear()} Metatek Global Ventures. All rights
+      reserved.
     </div>
   )
 }
