@@ -34,7 +34,7 @@ function Hero() {
           </p>
           <div className="mt-8">
             <a
-              href="#logo-cloud"
+              href="#nodes"
               className="inline-flex items-center gap-2 rounded-full bg-gray-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-gray-950/90"
             >
               View Our Projects
@@ -360,7 +360,7 @@ export default function Home() {
       <Hero />
       <main className="flex-grow">
         <Container className="py-16">
-          <div id="logo-cloud">
+          <div id="nodes">
             <LogoCloud />
           </div>
         </Container>
